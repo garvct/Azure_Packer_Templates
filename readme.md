@@ -13,7 +13,7 @@ git clone git@github.com:Azure/azhpc-images.git
 
 1. Download packer from https://www.packer.io/downloads.html
 
-2. Edit the packer templates, replace <NOT-SET> with appropriate values and give full paths to scripts (e.g replace </full/path/to/script.sh> with the full path)
+2. Edit the packer templates, replace \<NOT-SET\> with appropriate values and give full paths to scripts (e.g replace </full/path/to/script.sh> with the full path)
 
 3. Build custom image with packer using a packer template
 
