@@ -42,7 +42,4 @@ Verify GPU's are working
 ```
 nvidia-smi
 ```
-```
-ifconfig
-```
 
