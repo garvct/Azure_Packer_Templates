@@ -84,16 +84,6 @@
         {
             "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
             "inline": [
-                "chmod +x /tmp/install.sh",
-                "/tmp/install.sh"
-            ],
-            "inline_shebang": "/bin/bash -e",
-            "type": "shell",
-            "skip_clean": true
-        },
-        {
-            "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
-            "inline": [
                 "chmod +x /tmp/update_kernel.sh",
                 "/tmp/update_kernel.sh",
                 "echo 'rebooting now...'",
@@ -103,6 +93,16 @@
             "type": "shell",
             "skip_clean": true,
             "expect_disconnect": true
+        },
+        {
+            "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
+            "inline": [
+                "chmod +x /tmp/install.sh",
+                "/tmp/install.sh"
+            ],
+            "inline_shebang": "/bin/bash -e",
+            "type": "shell",
+            "skip_clean": true
         },
         {
             "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
