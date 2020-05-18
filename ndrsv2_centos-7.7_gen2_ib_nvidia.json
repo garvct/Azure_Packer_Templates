@@ -98,6 +98,9 @@
             "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
             "inline": [
                 "chmod +x /tmp/install.sh",
+                "chmod +x /tmp/install_utils.sh",
+                "chmod +x /tmp/install_mellanoxofed.sh",
+                "chmod +x /tmp/hpc-tuning.sh",
                 "/tmp/install.sh"
             ],
             "inline_shebang": "/bin/bash -e",
